@@ -9,6 +9,8 @@ use DB;
 use Uuid;
 use Auth;
 
+
+
 class RiderController extends Controller
 {
     /**
