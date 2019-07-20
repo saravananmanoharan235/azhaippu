@@ -16,4 +16,16 @@ class Event extends Model
     {
         return $this->belongsTo('App\User');
     }
+    public function eventimage()
+    {
+        return $this->hasMany('App\EventImage');
+    }
+    public function eventinfo()
+    {
+        return $this->hasMany('App\EventInfo');
+    }
+    public function eventinvites()
+    {
+        return $this->hasMany('App\EventInvites');
+    }
 }

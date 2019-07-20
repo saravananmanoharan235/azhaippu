@@ -138,7 +138,7 @@ class UserController extends Controller
         $success['user_id'] =  $user->id;
 
 
-        return response()->json(['success'=>$success], $this->successStatus);
+        return response()->json(['success'=>'true','data'=>$success], $this->successStatus);
     }
 
 
@@ -171,6 +171,7 @@ class UserController extends Controller
                 'email' => $input['email']
             ]);
         }
+        return response()->json(['success' =>'true','message'=>'Invited Successfully!.'], $this->successStatus);
         
 
     }

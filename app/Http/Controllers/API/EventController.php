@@ -14,6 +14,7 @@ use Image;
 use App\Event;
 use App\EventInfo;
 use App\EventInvites;
+use App\EventImage;
 
 class EventController extends Controller
 {
@@ -32,9 +33,11 @@ class EventController extends Controller
     public function getevents()
     {
 
-        $getevents = Event::with(['user'])->get();
+        $getevents = Event::with(['user','eventimage','eventinfo','eventinvites'])->where('user_id',Auth::user()->id)->get();
+        //echo "<pre>";print_r($getevents);die;
+
         if(!empty($getevents)){
-            return response()->json(['success' => '1','event' => $getevents], $this->successStatus);
+            return response()->json(['success' => '1','event' => $getevents,'event_image_path' => url('uploads/events/')], $this->successStatus);
         }else{
             return response()->json(['success'=>'false'], $this->successStatus);            
         } 
@@ -90,8 +93,10 @@ class EventController extends Controller
      public function addeventphoto(Request $request)
     {
         $input = $request->all();
+        //echo "<pre>";print_r($input);die;
 
         $validator = Validator::make($request->all(), [
+            'event_id' => 'required',
             'image' => 'required',
             'image.*' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
@@ -121,6 +126,10 @@ class EventController extends Controller
 
             $destinationPath = public_path('/uploads/events/original');
             $image->move($destinationPath, $input['imagename']);
+
+
+        $addEventImage = EventImage::create(['event_id'=>$input['event_id'],'image'=>$input['imagename']]);
+
         }
 
 

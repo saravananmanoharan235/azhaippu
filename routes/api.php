@@ -39,4 +39,9 @@ Route::group(['middleware' => 'auth:api'], function(){
 	Route::post('addevent','API\EventController@addevent');
 	Route::post('addeventphoto','API\EventController@addeventphoto');
 
+	//Circle
+	Route::get('getcircles', 'API\CircleController@getcircles');
+	Route::post('addcircle','API\CircleController@addcircle');
+	Route::post('addcirclephoto','API\CircleController@addcirclephoto');
+
 });
