@@ -20,12 +20,12 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                <!-- <li>
+                    <a href="{{url('/home')}}" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="material-icons">dashboard</i>
                         <p class="hidden-lg hidden-md">Dashboard</p>
                     </a>
-                </li>
+                </li> -->
 
 
 
@@ -90,7 +90,7 @@
             </ul>
 
 
-            <form class="navbar-form navbar-right" role="search">
+            <!-- <form class="navbar-form navbar-right" role="search">
                 <div class="form-group form-search is-empty">
                     <input type="text" class="form-control" placeholder=" Search ">
                     <span class="material-input"></span>
@@ -98,7 +98,7 @@
                 <button type="submit" class="btn btn-white btn-round btn-just-icon">
                     <i class="material-icons">search</i><div class="ripple-container"></div>
                 </button>
-            </form>
+            </form> -->
         </div>
     </div>
 </nav>

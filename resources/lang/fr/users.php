@@ -13,6 +13,7 @@ return [
     |
     */
 
-    'viewemployee' => 'Saravanan',
+    'viewemployee' => 'View Emp',
+    'viewevent' => 'View Event',
 
 ];

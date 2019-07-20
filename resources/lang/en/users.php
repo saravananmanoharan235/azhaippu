@@ -14,5 +14,6 @@ return [
     */
 
     'viewrider' => 'View Rider',
+    'viewevent' => 'View Event',
 
 ];

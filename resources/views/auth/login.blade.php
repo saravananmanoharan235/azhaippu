@@ -21,12 +21,12 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class= "">
+                <!-- <li class= "">
                     <a href="{{url('register')}}">
                         <i class="material-icons">person_add</i>
                         Register
                     </a>
-                </li>
+                </li> -->
                 <li class= " active ">
                     <a href="{{url('login')}}">
                         <i class="material-icons">fingerprint</i>
@@ -40,7 +40,8 @@
 
 
     <div class="wrapper wrapper-full-page">
-            <div class="full-page login-page" filter-color="black" data-image="{{ url('assets/img/login.jpg') }}">
+        <!-- data-image="{{ url('assets/img/login.jpg') }}" -->
+            <div class="full-page login-page" filter-color="black" >
         <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
         <div class="content">
             <div class="container">
@@ -144,7 +145,7 @@
             </ul>
         </nav>
         <p class="copyright pull-right">
-            &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.creative-tim.com/"> {{ config('app.name', 'Work Smart') }} </a>,  made with love for a better web 
+            &copy; <script>document.write(new Date().getFullYear())</script> <a href="{{url('/')}}"> {{ config('app.name', 'Najez') }} </a>
         </p>
     </div>
 </footer>

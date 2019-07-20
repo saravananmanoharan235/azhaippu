@@ -1,0 +1,94 @@
+/*.arabic-only{display:none}
+body#arabic-lang .images {background-image: url("../img/mobi2-arabic.png");}*/
+img.arabic-only{display:none}
+body#arabic-lang{font-size:20px;}
+body#arabic-lang #main-header a.logos img{display:none}
+body#arabic-lang #main-header a.logos img.arabic-only{display:block;}
+body#arabic-lang #main-header .col-lg-3.col-sm-3.col-xs-6.anti{float:right;}
+body#arabic-lang #main-header .navbar-right{float:left !important;}
+body#arabic-lang #main-header .navbar-nav > li {float: right;}
+body#arabic-lang .images {background-image: url("../img/mobi2-arabic.png");}
+body#arabic-lang .box-one{float:right;}
+body#arabic-lang .box-two{float:right;}
+body#arabic-lang .box-three{float:left;}
+body#arabic-lang .content1{float:right;}
+body#arabic-lang .content1 .anti{float:right;}
+body#arabic-lang .content1 .heart{float:left;}
+body#arabic-lang .content1 .col-lg-9.col-md-9.col-sm-9.col-xs-8{float:right;}
+body#arabic-lang .contentcenter{float:right;}
+body#arabic-lang .content2{float:left;}
+body#arabic-lang .content2 .anti-left{float:right;}
+body#arabic-lang .content2 .anti{float:left;}
+body#arabic-lang .circle-one{float:right;}
+body#arabic-lang .circle-two{float:right;}
+body#arabic-lang .circle-three{float:right;}
+body#arabic-lang .circle-four{float:right;}
+body#arabic-lang hr.hrclass {right: 50%; left: auto;}
+body#arabic-lang .tg-one{float:right;}
+body#arabic-lang .tg-one .btn1{float:left !important;border-bottom-left-radius:0em; border-top-left-radius:0em;border-bottom-right-radius:2em; border-top-right-radius:2em;}
+body#arabic-lang .tg-two{float:left;}
+body#arabic-lang .tg-two .btn2{float:right !important;border-bottom-left-radius:2em; border-top-left-radius:2em;border-bottom-right-radius:0em; border-top-right-radius:0em;}
+body#arabic-lang .Btn-radio1{float:right; border-radius: 0 3px 3px 0;}
+body#arabic-lang .Btn-radio2{float:left; border-radius: 3px 0 0 3px; margin-right:-1px; margin-left:0;}
+body#arabic-lang .group-one{float:right;}
+body#arabic-lang .group-two{float:right;}
+body#arabic-lang .group-three{float:left;}
+body#arabic-lang .group-one .form-control, body#arabic-lang .group-two .form-control, body#arabic-lang .group-three .form-control{text-align:right}
+body#arabic-lang select.form-control {background-position: 10px center;}
+body#arabic-lang .form-control{text-align:right; direction:rtl}
+body#arabic-lang select option{text-align:right; direction:rtl}
+body#arabic-lang .validation{left:15px; right:auto; line-height: 32px;}
+body#arabic-lang .validation .fa{position:absolute; right:-10px; line-height: 32px; -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */ transform: rotate(180deg);}
+body#arabic-lang ul li{list-style:disc}
+body#arabic-lang #main-header .countryDropdown .dropdown-menu, body#arabic-lang #main-header .col-lg-2 .dropdown-menu {left: 15px; right: auto;}
+body#arabic-lang .dropdown-menu li, body#arabic-lang .countryDropdown{list-style:none}
+body#arabic-lang #download-app button{font-size:20px;}
+body#arabic-lang #download-app button img{margin-left:10px; margin-right:0}
+@media only screen and (max-width: 1024px) {
+	body#arabic-lang .images{background-image: none;}
+	#services .images .anti{padding-left: 15px; padding-right: 15px;}
+}
+@media only screen and (max-width:767px) {
+body#arabic-lang #main-header .navbar-nav > li {width:100%;}
+body#arabic-lang .navbar-default .navbar-nav > li > a {padding: 15px;border-bottom: 1px solid;margin: 0;text-align: right;text-indent: 20px; font-size:20px}
+body#arabic-lang .navbar-toggle {float: left;}
+body#arabic-lang #main-header .countryDropdown .dropdown-menu, body#arabic-lang #main-header .col-lg-2 .dropdown-menu {
+    left: 0px;
+}
+#arabic-lang .dobaranic .row div:first-child{margin-top:25px;}
+}
+body#arabic-lang i.mandatestar{position:absolute; right:2px; color:red; top:-6px; width: 10px; left: auto;}
+#arabic-lang .checkboxhome{float: right; margin-right: 0; margin-left: 4px;}
+/*#arabic-lang .filechose .form-control.photo{padding: 0px;}*/
+#arabic-lang .filechose .validation{top: -15px !important;}
+#arabic-lang .filechose .validation .fa {position: absolute;
+right: -10px;
+line-height: 32px;
+-ms-transform: rotate(180deg);
+-webkit-transform: rotate(180deg);
+transform: rotate(270deg);
+top: 63px;
+left: 10px;
+}
+#arabic-lang .delfield .validation{top:-43px !important; width:100px;/* position:absolute*/}
+#arabic-lang .delfield .validation .fa{-ms-transform:rotate(270deg); -webkit-transform:rotate(270deg);transform:rotate(270deg); position:absolute; left:-14px; margin:0; top:77px;}
+#arabic-lang .delfield .validation.expired {width: 254px !important; right: 15px !important; left: auto;}
+#arabic-lang .delfield .validation.expired .fa {left: 60px; margin: 0; top: 117px;}
+#arabic-lang .delfield .validation.min-21{width:125px; left:0}
+#arabic-lang .step1 .delfield .validation{top:42px !important; width:125px; position:absolute}
+#arabic-lang .step1 .delfield .validation .fa{-ms-transform:rotate(90deg); -webkit-transform:rotate(90deg);transform:rotate(90deg); position:absolute; left:-14px; margin:0; top:-89px;}
+#arabic-lang .dobaranic .row div:first-child{float:right}
+#arabic-lang .dobaranic .row div:nth-child(2){float:right}
+#arabic-lang .dobaranic .row div:nth-child(3){float:right}
+#arabic-lang .dobaranic .row div:nth-child(4){float:left}
+#arabic-lang #download-app button {width: auto; min-width:190px;}
+#arabic-lang .btns{text-align:left}
+#arabic-lang .btns.text-right{text-align:right}
+#arabic-lang .btns{float:left;}
+#arabic-lang .downloadapp-img{float:right;}
+#arabic-lang .btns{text-align:right;}
+#arabic-lang .btns h3 i{direction:rtl}
+#arabic-lang .btns h3{float:left; width:100%;}
+#arabic-lang .btns h3 i{float:left; width:100%;}
+#arabic-lang .logos{float:right; max-width:100%}

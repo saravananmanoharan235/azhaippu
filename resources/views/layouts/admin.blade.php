@@ -41,7 +41,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script type="text/javascript">
-        console.log("test");
         $(document).ready(function() {
             $.ajaxSetup({
                 headers: {
@@ -51,7 +50,8 @@
         });
     </script>
     <script type="text/javascript">
-        var base_url = 'http://localhost/uberclone/public';
+        var base_url = 'http://localhost/azhaippu/public';
+        //var base_url = 'http://aegham.com/azhaippu/public';
     </script>
 
 </head>

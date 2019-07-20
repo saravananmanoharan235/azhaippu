@@ -18,15 +18,16 @@ Route::get('locale/{locale}', function ($locale){
     return redirect()->back();
 });
 
-Route::get('/', 'HomeController@welcome')->name('welcome');
-
 Auth::routes();
 
+Route::get('/', 'HomeController@welcome')->name('welcome');
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('riders', 'RiderController');
-Route::post('/userslist', 'RiderController@usersajax')->name('usersajax');
-Route::get('riderdelete/{uuid}', 'RiderController@riderdelete');
-Route::get('changestatus/{uuid}/{status}', 'RiderController@changestatus');
+Route::prefix('/admin')->group(function () 
+{
+	Route::resource('events', 'EventController');
+	Route::post('eventlist', 'EventController@ajaxlist');
+	Route::get('eventdelete/{uuid}', 'EventController@eventdelete');
+	Route::get('changestatus/{uuid}/{status}', 'EventController@changestatus');
 
-
+});
 //Route::get('/user/list', 'EmployeeController@index')->name('userlist');
